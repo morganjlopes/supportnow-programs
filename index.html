@@ -15,8 +15,8 @@ html,body{height:100%;background:#14171c;overflow:hidden}
 section{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden}
 section:not(.on){display:none !important}
 h1,h2,h3{font-weight:500}
-section>svg{z-index:0}
-section>:not(svg):not([style*="position:absolute"]){position:relative;z-index:1}
+section>svg[aria-label="Torn paper edge"]{z-index:0}
+section>:not(svg[aria-label="Torn paper edge"]):not([style*="position:absolute"]){position:relative;z-index:1}
 p{line-height:1.4}
 ul{padding-left:1.2em}
 table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden}
@@ -31,31 +31,36 @@ tr:last-child td{border-bottom:none}
 <section id="cover" data-transition="fade" style="background:#b2e4ff;color:#14171c;font-family:'FTPolar-Regular', Arial, sans-serif;padding:128px 128px 232px;display:flex;flex-direction:column;justify-content:space-between">
 <svg aria-label="Torn paper edge" viewBox="0 0 1440 176" width="1440" height="176" preserveAspectRatio="none" style="position:absolute;left:0px;bottom:0px;width:1920px;height:235px"><path d="M0,176 L0,162.8 L43.3,158.8 L89.3,140.9 L131.8,137.9 L166.4,132.2 L187.8,135.4 L220.8,131.0 L252.3,119.6 L278.3,122.1 L331.6,114.8 L357.1,112.6 L376.2,112.1 L418.3,114.3 L463.3,109.9 L489.4,108.9 L519.8,101.3 L568.8,88.8 L623.5,84.4 L648.0,83.5 L691.0,85.0 L743.1,73.4 L764.6,73.8 L806.6,62.9 L841.5,62.4 L888.7,77.3 L943.0,64.6 L973.4,56.3 L1009.0,57.8 L1037.3,58.6 L1078.9,76.7 L1123.7,53.3 L1170.1,58.0 L1224.5,41.4 L1253.0,45.7 L1303.0,57.0 L1328.6,54.2 L1357.7,52.7 L1401.4,45.6 L1434.2,42.9 L1440,15.0 L1440,176 Z" fill="#f6f2ec"/></svg>
 <p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:#0030b9">SupportNow · Team overview</p>
-<div style="display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:0px">
+<h1 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:120px;font-weight:500;letter-spacing:-4px;line-height:1.05;white-space:nowrap">Everything we</h1>
 <div style="display:flex;gap:0px;align-items:center">
-<h1 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:104px;font-weight:500;letter-spacing:-3px;line-height:1.05;white-space:nowrap">Everything we</h1>
 <div style="position:relative;display:flex;flex-direction:column;padding:32px 44px">
 <img src="images/mark-circle.png" alt="" style="position:absolute;left:0px;top:0px;width:100%;height:100%;mix-blend-mode:multiply">
-<h1 style="font-family:'CalisteDisplay-Italic', Georgia, serif;font-size:112px;font-weight:400;line-height:1.05;white-space:nowrap">offer</h1>
+<h1 style="font-family:'CalisteDisplay-Italic', Georgia, serif;font-size:128px;font-weight:400;line-height:1.05;white-space:nowrap">offer</h1>
 </div>
-<h1 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:104px;font-weight:500;letter-spacing:-3px;line-height:1.05;white-space:nowrap;transform:translateX(-30px)">, for now</h1>
+<h1 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:120px;font-weight:500;letter-spacing:-4px;line-height:1.05;white-space:nowrap;transform:translateX(-26px)">, for now</h1>
 </div>
-<p style="font-size:44px;line-height:1.3;color:#3b4351">Who each one is for and the problem it solves.</p>
+</div>
+<p style="font-size:44px;line-height:1.3;color:#3b4351">What they are for and the problem they solve.</p>
 </div>
 <p style="font-size:24px;color:#3b4351">Grants · Advocacy Marketplace · Funding Coach · Emergency Contact · Clicklist · Support Languages · Podcast</p>
 </section>
-<section id="persona" data-transition="fade" style="background:#f6f2ec;color:#14171c;font-family:'FTPolar-Regular', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<section id="persona" data-transition="fade" style="background:#f6f2ec;color:#14171c;font-family:'FTPolar-Regular', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
 <div style="display:flex;flex-direction:column;gap:8px">
 <p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:#0030b9">Who we serve</p>
-<div style="display:flex;gap:20px;align-items:baseline">
-<h2 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:72px;font-weight:500;letter-spacing:-2px;line-height:1.1">Most programs serve the</h2>
+<div style="display:flex;flex-direction:column;gap:0px;align-items:flex-start">
+<h2 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:72px;font-weight:500;letter-spacing:-2px;line-height:1.1">Most programs serve</h2>
+<div style="display:flex;gap:20px;align-items:flex-start">
+<h2 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:72px;font-weight:500;letter-spacing:-2px;line-height:1.1">the</h2>
 <div style="display:flex;flex-direction:column;align-items:center">
 <h2 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:72px;font-weight:500;letter-spacing:-2px;line-height:1.1">same parent</h2>
 <img src="images/mark-squiggle.png" alt="" style="width:400px;height:72px">
 </div>
 </div>
 </div>
-<p style="font-size:32px;line-height:1.4;color:#3b4351">A parent, usually mom, raising a child with a disability or major medical need.</p>
+</div>
+<p style="font-size:32px;line-height:1.4;color:#3b4351">Families during major life events</p>
 <div style="display:flex;gap:32px">
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#ffffff;padding:40px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
 <p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:120px;font-weight:500;letter-spacing:-4px;line-height:1.05;color:#14171c">14.1M</p>
@@ -67,27 +72,29 @@ tr:last-child td{border-bottom:none}
 </div>
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#ffffff;padding:40px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
 <p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:120px;font-weight:500;letter-spacing:-4px;line-height:1.05;color:#14171c">~9M</p>
-<p style="font-size:32px;line-height:1.35;color:#3b4351">households (our estimate)</p>
+<p style="font-size:32px;line-height:1.35;color:#3b4351">households</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5b6470">Source: HRSA National Survey of Children's Health, 2019-2020. Household count is our math on Census 2024 family totals.</p>
 </section>
-<section id="core" data-transition="fade" style="background:#f6f2ec;color:#14171c;font-family:'FTPolar-Regular', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<section id="core" data-transition="fade" style="background:#f6f2ec;color:#14171c;font-family:'FTPolar-Regular', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:8px">
 <p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:#0030b9">How it all connects</p>
-<h2 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:72px;font-weight:500;letter-spacing:-2px;line-height:1.1">The platform feeds the core product</h2>
+<h2 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:72px;font-weight:500;letter-spacing:-2px;line-height:1.1">The platform feeds<br>the core product</h2>
 </div>
 <div style="display:flex;gap:32px;align-items:stretch">
 <div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#ffffff;padding:48px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
-<p style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">Seven apps</p>
+<p style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">Marketing</p>
 <h3 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:56px;font-weight:500;letter-spacing:-1px;line-height:1.15;color:#14171c">The platform</h3>
 <p style="font-size:32px;line-height:1.35;color:#3b4351">Engages and nurtures our ideal customer.</p>
+<ul style="font-size:32px;line-height:1.5;color:#14171c"><li>Grants</li><li>Advocacy Marketplace</li><li>Emergency Contact</li><li>Podcast</li></ul>
 </div>
 <p style="align-self:center;font-family:Arial, sans-serif;font-size:96px;line-height:1;color:#188aec">&#8594;</p>
 <div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#b2e4ff;padding:48px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
 <p style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">The economic engine</p>
 <h3 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:56px;font-weight:500;letter-spacing:-1px;line-height:1.15;color:#14171c">The core product</h3>
 <p style="font-size:32px;line-height:1.35;color:#3b4351">Peer-to-peer giving and crowdfunding.</p>
+<ul style="font-size:32px;line-height:1.5;color:#14171c"><li>Giving</li><li>Meals</li><li>To-dos</li><li>Communication</li></ul>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5b6470">Every platform app should move someone one step closer to the core product.</p>
@@ -123,7 +130,7 @@ tr:last-child td{border-bottom:none}
 <div style="display:flex;flex-direction:column;gap:4px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">How big</h3>
 <p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:120px;font-weight:500;letter-spacing:-4px;line-height:1.05;color:#14171c">100M</p>
-<p style="font-size:32px;line-height:1.35;color:#3b4351">Americans affected by medical debt</p>
+<p style="font-size:32px;line-height:1.35;color:#3b4351">Americans affected by complex medical situations</p>
 </div>
 </div>
 <img src="images/7.webp" alt="Grants home page showing 3,645 grants" style="width:640px;height:457px;object-fit:contain;border:1px solid #e7e1d8;border-radius:12px;box-shadow:0 12px 32px rgba(20,23,28,0.12);background:#ffffff">
@@ -141,7 +148,7 @@ tr:last-child td{border-bottom:none}
 <p style="font-size:32px;line-height:1.35;color:#3b4351">For parents fighting schools, insurance, and Medicaid.</p>
 <div style="display:flex;flex-direction:column;gap:10px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">The problem</h3>
-<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">They are learning these systems alone.</p>
+<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">Families are learning and stumbling through complex systems alone.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:4px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">How big</h3>
@@ -164,7 +171,7 @@ tr:last-child td{border-bottom:none}
 <p style="font-size:32px;line-height:1.35;color:#3b4351">For families with one big cost to fund.</p>
 <div style="display:flex;flex-direction:column;gap:10px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">The problem</h3>
-<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">They don't know where to start or what mix will work.</p>
+<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">They don't know where to begin or how to mix and match their financial options.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:4px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">How big</h3>
@@ -186,7 +193,7 @@ tr:last-child td{border-bottom:none}
 <p style="font-size:32px;line-height:1.35;color:#3b4351">For any parent with kids at home.</p>
 <div style="display:flex;flex-direction:column;gap:10px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">The problem</h3>
-<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">Everything a sitter needs lives in the parent's head.</p>
+<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">Critical health information usually lives in one parent's head.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:4px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">How big</h3>
@@ -208,7 +215,7 @@ tr:last-child td{border-bottom:none}
 <p style="font-size:32px;line-height:1.35;color:#3b4351">For social workers and caseworkers.</p>
 <div style="display:flex;flex-direction:column;gap:10px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">The problem</h3>
-<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">They repeat the same ten resources to every family.</p>
+<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">They usually share the same 5 to 10 resources, but rarely in digital form, in one place.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:4px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">How big</h3>
@@ -230,7 +237,7 @@ tr:last-child td{border-bottom:none}
 <p style="font-size:32px;line-height:1.35;color:#3b4351">For the friends and family of someone in crisis.</p>
 <div style="display:flex;flex-direction:column;gap:10px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">The problem</h3>
-<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">They want to help but don't know how.</p>
+<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">Supporters want to help but don't know how.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:4px">
 <h3 style="font-family:'FTPolar-Bold', Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14171c">How big</h3>
@@ -265,36 +272,56 @@ tr:last-child td{border-bottom:none}
 <p style="position:absolute;right:128px;top:128px;width:520px;font-family:'FTPolar-Bold', Arial, sans-serif;font-size:28px;font-weight:700;text-align:center;color:#14171c;background:#b2e4ff;padding:16px 24px;border-radius:40px">Today: about 110 episodes</p>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5b6470">supportnow.org/podcast · Sources: US Census, Edison Research</p>
 </section>
-<section id="next" data-transition="fade" style="background:#b2e4ff;color:#14171c;font-family:'FTPolar-Regular', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<section id="next" data-transition="fade" style="background:#b2e4ff;color:#14171c;font-family:'FTPolar-Regular', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:40px">
 <svg aria-label="Torn paper edge" viewBox="0 0 1440 176" width="1440" height="176" preserveAspectRatio="none" style="position:absolute;left:0px;bottom:0px;width:1920px;height:235px"><path d="M0,176 L0,162.8 L43.3,158.8 L89.3,140.9 L131.8,137.9 L166.4,132.2 L187.8,135.4 L220.8,131.0 L252.3,119.6 L278.3,122.1 L331.6,114.8 L357.1,112.6 L376.2,112.1 L418.3,114.3 L463.3,109.9 L489.4,108.9 L519.8,101.3 L568.8,88.8 L623.5,84.4 L648.0,83.5 L691.0,85.0 L743.1,73.4 L764.6,73.8 L806.6,62.9 L841.5,62.4 L888.7,77.3 L943.0,64.6 L973.4,56.3 L1009.0,57.8 L1037.3,58.6 L1078.9,76.7 L1123.7,53.3 L1170.1,58.0 L1224.5,41.4 L1253.0,45.7 L1303.0,57.0 L1328.6,54.2 L1357.7,52.7 L1401.4,45.6 L1434.2,42.9 L1440,15.0 L1440,176 Z" fill="#f6f2ec"/></svg>
 <div style="display:flex;flex-direction:column;gap:8px">
 <p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:#0030b9">What's next</p>
-<div style="display:flex;gap:18px;align-items:baseline">
-<h2 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:72px;font-weight:500;letter-spacing:-2px;line-height:1.1">We planted seeds. Now we</h2>
+<div style="display:flex;flex-direction:column;gap:0px;align-items:flex-start">
+<h2 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:72px;font-weight:500;letter-spacing:-2px;line-height:1.1">We planted seeds.</h2>
+<div style="display:flex;gap:18px;align-items:flex-start">
+<h2 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:72px;font-weight:500;letter-spacing:-2px;line-height:1.1">Now we</h2>
 <div style="display:flex;flex-direction:column;align-items:center">
-<h2 style="font-family:'CalisteDisplay-Italic', Georgia, serif;font-size:78px;font-weight:400;line-height:1.1">garden.</h2>
-<img src="images/mark-underline.png" alt="" style="width:320px;height:68px">
+<h2 style="font-family:'CalisteDisplay-Italic', Georgia, serif;font-size:78px;font-weight:400;line-height:1.02">garden.</h2>
+<img src="images/mark-underline.png" alt="" style="width:300px;height:56px">
 </div>
 </div>
 </div>
-<p style="font-size:32px;line-height:1.4;color:#3b4351">Time to water, prune, and adjust.</p>
+</div>
 <div style="display:flex;flex-direction:column;gap:20px">
-<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:#0030b9">In Q4</p>
+<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:#0030b9">In Q4 we water, prune, and adjust</p>
 <div style="display:flex;gap:32px;align-items:stretch">
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#ffffff;padding:48px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#ffffff;padding:44px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
+<svg aria-label="Standardize icon" viewBox="0 0 64 64" width="64" height="64" style="width:64px;height:64px"><g fill="none" stroke="#188aec" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="20" height="20" rx="4"/><rect x="36" y="8" width="20" height="20" rx="4"/><rect x="8" y="36" width="20" height="20" rx="4"/><rect x="36" y="36" width="20" height="20" rx="4"/></g></svg>
 <h3 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">Standardize</h3>
 <p style="font-size:32px;line-height:1.35;color:#3b4351">Look, work, and report the same way.</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#ffffff;padding:48px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#ffffff;padding:44px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
+<svg aria-label="Report weekly icon" viewBox="0 0 64 64" width="64" height="64" style="width:64px;height:64px"><g fill="none" stroke="#188aec" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 54V36M26 54V22M42 54V30M56 54V10"/></g></svg>
 <h3 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">Report weekly</h3>
 <p style="font-size:32px;line-height:1.35;color:#3b4351">Performance, deliverables, clear objectives.</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#ffffff;padding:48px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#ffffff;padding:44px;border-radius:12px;box-shadow:0 1px 3px rgba(20,23,28,0.06)">
+<svg aria-label="Streamline communication icon" viewBox="0 0 64 64" width="64" height="64" style="width:64px;height:64px"><g fill="none" stroke="#188aec" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14a6 6 0 0 1 6-6h36a6 6 0 0 1 6 6v22a6 6 0 0 1-6 6H28L16 54V42h-2a6 6 0 0 1-6-6z"/></g></svg>
 <h3 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:44px;font-weight:500;letter-spacing:-1px;line-height:1.2;color:#14171c">Streamline communication</h3>
 <p style="font-size:32px;line-height:1.35;color:#3b4351">One clear way across the platform.</p>
 </div>
 </div>
 </div>
+</section>
+<section id="abby" data-transition="fade" style="background:#b2e4ff;color:#14171c;font-family:'FTPolar-Regular', Arial, sans-serif;padding:128px 128px 232px;display:flex;flex-direction:column;justify-content:space-between">
+<svg aria-label="Torn paper edge" viewBox="0 0 1440 176" width="1440" height="176" preserveAspectRatio="none" style="position:absolute;left:0px;bottom:0px;width:1920px;height:235px"><path d="M0,176 L0,162.8 L43.3,158.8 L89.3,140.9 L131.8,137.9 L166.4,132.2 L187.8,135.4 L220.8,131.0 L252.3,119.6 L278.3,122.1 L331.6,114.8 L357.1,112.6 L376.2,112.1 L418.3,114.3 L463.3,109.9 L489.4,108.9 L519.8,101.3 L568.8,88.8 L623.5,84.4 L648.0,83.5 L691.0,85.0 L743.1,73.4 L764.6,73.8 L806.6,62.9 L841.5,62.4 L888.7,77.3 L943.0,64.6 L973.4,56.3 L1009.0,57.8 L1037.3,58.6 L1078.9,76.7 L1123.7,53.3 L1170.1,58.0 L1224.5,41.4 L1253.0,45.7 L1303.0,57.0 L1328.6,54.2 L1357.7,52.7 L1401.4,45.6 L1434.2,42.9 L1440,15.0 L1440,176 Z" fill="#f6f2ec"/></svg>
+<p style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:#0030b9">Up next</p>
+<div style="display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;gap:0px;align-items:center">
+<h1 style="font-family:'FTPolar-Medium', Arial, sans-serif;font-size:120px;font-weight:500;letter-spacing:-4px;line-height:1.05;white-space:nowrap">Meet</h1>
+<div style="position:relative;display:flex;flex-direction:column;padding:32px 44px">
+<img src="images/mark-circle.png" alt="" style="position:absolute;left:0px;top:0px;width:100%;height:100%;mix-blend-mode:multiply">
+<h1 style="font-family:'CalisteDisplay-Italic', Georgia, serif;font-size:128px;font-weight:400;line-height:1.05;white-space:nowrap">Abby</h1>
+</div>
+</div>
+<p style="font-size:44px;line-height:1.3;color:#3b4351">A deeper look at the Advocacy Marketplace.</p>
+</div>
+<p style="font-size:24px;color:#3b4351">supportnow.org/advocacy</p>
 </section>
 </div>
 <div id="nav"><span id="count"></span><button id="prev" aria-label="Previous slide">&larr;</button><button id="next" aria-label="Next slide">&rarr;</button></div>
